@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preparação da Reunião</title>
+<style>
+  :root{
+    --bg:#f4f6f8; --card:#ffffff; --ink:#1a2733; --muted:#5c6b7a;
+    --line:#e2e8ee; --accent:#2c5f8a; --accent-soft:#eaf1f8;
+    --gold:#9a7b26; --gold-soft:#f7f1e0; --green:#2f6b4f; --green-soft:#e8f3ed;
+    --shadow:0 1px 3px rgba(20,40,60,.08),0 6px 20px rgba(20,40,60,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f1620; --card:#161f2b; --ink:#e6edf3; --muted:#9fb0c0;
+      --line:#26313f; --accent:#6fa8d6; --accent-soft:#182634;
+      --gold:#d8b552; --gold-soft:#2a2415; --green:#77c79c; --green-soft:#14251d;
+      --shadow:0 1px 3px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1620; --card:#161f2b; --ink:#e6edf3; --muted:#9fb0c0;
+    --line:#26313f; --accent:#6fa8d6; --accent-soft:#182634;
+    --gold:#d8b552; --gold-soft:#2a2415; --green:#77c79c; --green-soft:#14251d;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif;padding:2rem 1rem}
+  .wrap{max-width:820px;margin:0 auto}
+  header.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:1.4rem 1.6rem;box-shadow:var(--shadow);margin-bottom:1.6rem}
+  .kind{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);background:var(--accent-soft);
+    padding:.28rem .7rem;border-radius:999px;margin-bottom:.7rem}
+  header.doc h1{margin:.1rem 0 .3rem;font-size:1.5rem;line-height:1.25}
+  header.doc .meta{color:var(--muted);font-size:.95rem}
+  header.doc .base{margin-top:.7rem;padding-top:.7rem;border-top:1px dashed var(--line);
+    font-size:.95rem}
+  section.block{margin:1.8rem 0}
+  .block > h2{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold);border-bottom:2px solid var(--gold-soft);padding-bottom:.4rem;margin:0 0 1rem}
+  .part{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:1.1rem 1.2rem;margin-bottom:1rem;box-shadow:var(--shadow)}
+  .part h3{margin:.1rem 0 .5rem;font-size:1.08rem;display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+  .time{font-size:.72rem;font-weight:700;color:var(--muted);background:var(--bg);
+    border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem;white-space:nowrap}
+  .refs{font-size:.9rem;color:var(--accent);font-weight:600;margin:.2rem 0 .5rem}
+  .lead{color:var(--muted);font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;
+    font-weight:700;margin:.9rem 0 .3rem}
+  .central{background:var(--accent-soft);border-left:3px solid var(--accent);
+    padding:.6rem .8rem;border-radius:0 8px 8px 0;margin:.3rem 0}
+  .elaborada{padding:.2rem 0 .2rem .2rem}
+  .joia{border:1px dashed var(--line);border-radius:8px;padding:.6rem .8rem;margin:.5rem 0}
+  .joia .cv{font-weight:700;color:var(--gold)}
+  .destaque{background:var(--green-soft);border:1px solid var(--green);border-radius:12px;
+    padding:1.1rem 1.2rem;margin-top:1rem}
+  .destaque h3{margin:.1rem 0 .5rem;color:var(--green)}
+  .q{font-weight:600}
+  .note{font-size:.85rem;color:var(--muted);font-style:italic}
+  .img-desc{background:var(--gold-soft);border-radius:8px;padding:.6rem .8rem;margin-top:.6rem;font-size:.92rem}
+  .img-desc b{color:var(--gold)}
+  .quadro{background:var(--accent-soft);border-radius:10px;padding:.9rem 1rem;margin-top:.7rem}
+  .quadro h4{margin:0 0 .5rem;font-size:.95rem;color:var(--accent)}
+  .quadro ul{margin:.3rem 0;padding-left:1.2rem}
+  footer.doc{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.82rem;text-align:center}
+  a{color:var(--accent)}
+  @media print{
+    body{background:#fff;color:#000;padding:0;font-size:12pt}
+    .part,header.doc,.destaque{box-shadow:none;border-color:#ccc}
+    .kind{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc">
+    <span class="kind">ESTUDO DE A SENTINELA</span>
+    <h1>O que aprendemos com os gibeonitas?</h1>
+    <div class="meta">Semana de 7 a 13 de setembro de 2026 &middot; Cântico inicial 88 (Os teus caminhos quero entender) &middot; Cântico final 148 (Jeová é nosso Salvador)</div>
+    <div class="base">Texto base: "...os habitantes de Gibeão tinham feito paz com Israel e permaneciam entre eles..." — Josué 10:1</div>
+  </header>
+
+  <main>
+
+    <section class="block">
+      <h2>Parágrafo por parágrafo</h2>
+
+      <div class="part">
+        <h3>§1-2 &middot; Por que devemos nos interessar pelo que a Bíblia diz sobre os gibeonitas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Porque o relato dos gibeonitas atravessa vários séculos da história bíblica e, em cada momento em que reaparece, revela algo sobre a personalidade de Jeová — lições que nos ajudam a servi-lo melhor hoje.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O cenário é 1473 a.C.: Israel acaba de conquistar Jericó e Ai e avança pela Terra Prometida. Nesse momento chega um grupo de viajantes gibeonitas propondo um acordo de paz — o episódio que abre o texto base do estudo (Josué 10:1). O que torna os gibeonitas interessantes não é só esse primeiro contato, é que a Bíblia volta a falar deles nos dias de Davi e ainda depois do exílio em Babilônia, séculos mais tarde: um mesmo povo, observado por Jeová ao longo de gerações. <br><br><b>Aplicação prática:</b> ao estudar um relato "antigo" como este, vale perguntar desde já: o que este relato mostra sobre o jeito de Jeová agir — e isso ainda é válido para mim hoje?</div>
+      </div>
+
+      <div class="part">
+        <h3>§3 &middot; (a) Quem eram os gibeonitas? (b) Por que eles quiseram fazer um acordo de paz com Israel?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Os gibeonitas eram heveus, uma das nações cananeias que Jeová tinha ordenado a Israel destruir. Ao ver as vitórias "extraordinárias" de Israel em Jericó e Ai, perceberam que era Jeová quem lutava por esse povo e por isso buscaram um acordo de paz em vez de resistir militarmente.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Deuteronômio 7:1 e Êxodo 34:11 listam os heveus entre as sete nações que Israel deveria expulsar de Canaã — os gibeonitas não eram uma exceção à ordem de Jeová, estavam exatamente na lista dos que seriam destruídos. Josué 10:2 mostra que Gibeão era "uma cidade grande, como uma das cidades reais", maior até que Ai e com "homens valentes" — ou seja, a decisão dos gibeonitas não nasceu de fraqueza militar, nasceu do medo de enfrentar um Deus que já tinha derrubado Jericó. Josué 9:24 registra a própria explicação deles: souberam "com certeza" que Jeová tinha ordenado destruir todos os moradores da terra, e "tiveram muito medo" por causa disso. <br><br><b>Aplicação prática:</b> os gibeonitas reconheceram a realidade da força de Jeová antes de qualquer outra nação cananeia — reconhecer hoje que Jeová está por trás do crescimento da congregação também é um ato de humildade, não só uma observação.</div>
+      </div>
+
+      <div class="part">
+        <h3>§4 &middot; (a) De acordo com Josué 9:8-13, como os gibeonitas enganaram os israelitas para conseguir um pacto de paz com eles? (b) O que aconteceu quando eles foram descobertos? <span class="note">(Veja também a imagem.)</span></h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Os gibeonitas fingiram vir de "uma terra bem distante", usando roupas gastas e provisões velhas como prova, e omitiram que sabiam da queda de Jericó e Ai. Israel acreditou e fez um juramento de paz "sem consultar a Jeová" (Josué 9:14-15); três dias depois, ao descobrir o engano, Israel manteve o acordo por causa do juramento, mas condenou os gibeonitas a serviço humilde como cortadores de lenha e tiradores de água (Josué 9:16-19, 27).</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O detalhe central de Josué 9:8-13 é que o engano foi montado com cuidado — pão seco e migalhado, odres de vinho rasgados e remendados, roupas e sandálias gastas — para simular uma viagem longa que na verdade não existiu. Josué 9:14-15 marca o erro de Israel: os líderes "aceitaram as provisões deles, sem pedir orientação de Jeová" — um lembrete de que decisões importantes precisam passar por Jeová, não só pela aparência das evidências. Mesmo depois de descobrir o engano (Josué 9:16-19), Israel cumpriu o juramento feito "em nome de Jeová" (9:19) porque quebrar um voto seria pecado — e Josué 9:27 mostra a solução: os gibeonitas continuam vivos, mas como servos permanentes do altar de Jeová. <br><br><b>Aplicação prática:</b> o episódio ensina a importância de buscar a orientação de Jeová antes de decidir algo importante, em vez de confiar só na primeira impressão das evidências.</div>
+        <div class="img-desc"><b>Imagem do parágrafo:</b> um grupo de gibeonitas ajoelhado diante de Josué e dos soldados israelitas, mostrando roupas gastas e odres velhos de vinho para simular uma viagem distante — ilustra exatamente o engano descrito no parágrafo: a farsa cuidadosamente montada que convenceu os líderes de Israel a fazer o pacto sem consultar Jeová.</div>
+      </div>
+
+      <div class="part">
+        <h3>§5 &middot; De que formas os gibeonitas mostraram fé em Jeová?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Quando cinco reis amorreus atacaram Gibeão para puni-los pelo acordo com Israel, os gibeonitas não hesitaram: pediram ajuda a Josué, confiando que Israel — e por trás dele, Jeová — os defenderia.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Josué 10:3-7 mostra que os cinco reis se uniram justamente porque Gibeão tinha feito paz com Israel — um ataque de represália. Os gibeonitas, mesmo sem exército próprio para enfrentar cinco reis, mandaram um pedido de socorro a Josué em vez de tentar negociar sozinhos ou fugir. E a resposta de Jeová foi extraordinária: Josué 10:9-14 relata que ele lançou "grandes pedras de granizo" sobre os inimigos — matando mais gente com o granizo do que com a espada de Israel — e prolongou a luz do dia para que a batalha pudesse terminar. Os gibeonitas testemunharam, em primeira mão, até onde vai o poder de Jeová para cumprir o que promete. <br><br><b>Aplicação prática:</b> assim como os gibeonitas recorreram ao povo de Jeová em vez de confiar só nos próprios recursos, buscar apoio na congregação numa dificuldade grande é, no fundo, um ato de fé em Jeová.</div>
+      </div>
+
+      <div class="part">
+        <h3>§6 &middot; O que aprendemos sobre Jeová ao ver a maneira como ele tratou os gibeonitas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová é humilde e misericordioso: mesmo tendo ordenado a destruição dos cananeus, ele permitiu que os gibeonitas vivessem para que o juramento de Israel fosse honrado, e ainda agiu com poder para protegê-los do ataque dos reis amorreus.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Deuteronômio 9:3 deixa claro que Jeová tinha prometido ir à frente de Israel como "fogo consumidor" para destruir os cananeus rapidamente — esse era o padrão esperado. Mas Josué 9:26 mostra Josué protegendo os gibeonitas "da mão dos israelitas", que não os mataram; e Josué 11:19 confirma que Gibeão foi a única cidade da região a fazer paz com Israel por iniciativa própria. Ou seja, Jeová não anulou seu propósito maior, mas abriu espaço dentro dele para honrar um juramento feito em seu nome — mesmo um juramento obtido por engano e sem tê-lo consultado antes. <br><br><b>Aplicação prática:</b> ver Jeová dando valor a um compromisso assumido por líderes falíveis ajuda a confiar que ele também leva a sério os compromissos que assumimos uns com os outros na congregação, como promessas e responsabilidades aceitas.</div>
+      </div>
+
+      <div class="part">
+        <h3>§7 &middot; Como podemos seguir o exemplo de fé e humildade dos gibeonitas? <span class="note">(Veja também a imagem.)</span></h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Cultivando fé forte em Jeová e aceitando de bom grado tarefas humildes no serviço a ele, sem esperar reconhecimento — assim como os gibeonitas aceitaram ser cortadores de lenha e tiradores de água.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Josué 9:23 e 9:27 mostram os gibeonitas assumindo, sem resistência, o trabalho mais humilde possível: cortar lenha e tirar água "para a casa do meu Deus". Salmo 40:4-5 fala da felicidade de quem confia em Jeová e reconhece que "muitos são os teus atos maravilhosos" — uma confiança que se expressa em ações simples, não em grandes discursos. O exemplo de Luke, citado no artigo, mostra como observar um irmão mais velho fazendo trabalho humilde em Betel ensinou a ele o que humildade parece na prática, e não só na teoria. <br><br><b>Aplicação prática:</b> aceitar de bom grado uma tarefa "sem brilho" na congregação — arrumar cadeiras, limpar, servir em algo que ninguém vai notar — é uma forma concreta de imitar a atitude dos gibeonitas.</div>
+        <div class="img-desc"><b>Imagem do parágrafo:</b> duas cenas lado a lado — um gibeonita carregando um jarro de água, e um irmão mais idoso cuidando do jardim de um Salão do Reino — ligam diretamente o exemplo antigo dos gibeonitas à mesma disposição de servir em tarefas humildes hoje.</div>
+      </div>
+
+      <div class="part">
+        <h3>§8 &middot; Qual crime o rei Saul cometeu contra os gibeonitas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Movido por um "zelo" mal direcionado por Israel e Judá, Saul tentou eliminar os gibeonitas, matando muitos deles — e assim quebrou o acordo de paz que Israel tinha jurado séculos antes.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">2 Samuel 21:2 explica o pano de fundo: os israelitas tinham feito um juramento de poupar os gibeonitas, "mas Saul, no seu zelo pelo povo de Israel e de Judá, procurou golpeá-los". É um alerta sério — zelo por uma causa aparentemente boa (defender o próprio povo) não justifica quebrar um juramento feito em nome de Jeová nem cometer violência contra quem esse juramento protegia. O crime de Saul não foi só político, foi espiritual: ele desprezou um compromisso que Israel tinha assumido diante de Deus. <br><br><b>Aplicação prática:</b> antes de agir com "zelo" por alguma causa, vale parar e checar se esse zelo está alinhado com os princípios de Jeová ou se está apenas servindo a interesses próprios disfarçados de boa intenção.</div>
+      </div>
+
+      <div class="part">
+        <h3>§9 &middot; Quando a injustiça contra os gibeonitas foi finalmente resolvida?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Não foi resolvida de imediato. Só no reinado de Davi, sucessor de Saul, é que Jeová trouxe o assunto à tona — por meio de uma fome que durou três anos seguidos.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">2 Samuel 21:1 registra que Davi só descobriu a causa da fome depois de consultar Jeová diretamente — a resposta foi que "Saul e sua casa têm culpa de sangue" por causa dos gibeonitas. O tempo entre o crime de Saul e essa resposta de Jeová pode ter sido de vários anos; a injustiça não foi esquecida por Deus só porque não foi corrigida na hora. <br><br><b>Aplicação prática:</b> quando uma injustiça parece "sem solução" por muito tempo, o relato lembra que o silêncio de Jeová não é o mesmo que indiferença — ele tem seu próprio tempo para agir.</div>
+      </div>
+
+      <div class="part">
+        <h3>§10 &middot; Como os gibeonitas mostraram respeito pela Lei de Deus ao falar com Davi?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Quando Davi ofereceu prata ou ouro como compensação, os gibeonitas recusaram, porque a Lei de Deus proibia resgate financeiro pela vida de um assassino; também reconheceram que não tinham autoridade para executar justiça por conta própria e deixaram essa decisão para o rei.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Números 35:30-31 estabelece o princípio por trás da recusa: "não aceitem nenhum resgate pela vida de um assassino que merece morrer, pois ele sem falta deve ser morto" — dinheiro nunca poderia substituir a justiça devida por sangue derramado. 2 Samuel 21:3-6 mostra os gibeonitas pedindo, em vez disso, sete descendentes de Saul para serem executados em Gibeá; 2 Samuel 21:9-10 registra a execução e Rispa protegendo os corpos com um pano de saco; e 2 Samuel 21:14 fecha o relato dizendo que, depois de tudo resolvido — incluindo o sepultamento apropriado dos ossos de Saul e Jônatas — "Deus ouviu as súplicas a favor da terra" e a fome cessou. Chama atenção que os gibeonitas, um povo não israelita, conheciam e respeitavam a Lei de Moisés mais do que o esperado. <br><br><b>Aplicação prática:</b> os gibeonitas não tomaram a justiça com as próprias mãos, mesmo tendo motivo — deixaram a decisão final para a autoridade estabelecida, um princípio que vale hoje ao lidar com injustiças por meio dos procedimentos certos, e não por conta própria.</div>
+      </div>
+
+      <div class="part">
+        <h3>§11 &middot; O que aprendemos sobre Jeová nesse relato?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová é um Deus justo: ele valoriza a justiça mesmo para estrangeiros e minorias, cobra de quem quebra um acordo feito em seu nome, e corrige as injustiças no tempo certo.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Salmo 37:28 resume o princípio: "Jeová ama a justiça e não abandonará aqueles que lhe são leais" — os gibeonitas eram leais ao pacto, e Jeová não os abandonou, mesmo anos depois do crime de Saul. Amós 1:9 mostra o mesmo padrão em outro contexto: Jeová condena Tiro justamente por não se lembrar "do pacto de irmãos" — quebrar um acordo/aliança é tratado como algo sério aos olhos de Deus, não como um detalhe esquecível. Isso mostra que a justiça de Jeová não depende da nacionalidade ou status social de quem foi prejudicado. <br><br><b>Aplicação prática:</b> confiar que Jeová enxerga e um dia corrige injustiças que talvez nunca sejam resolvidas por autoridades humanas ajuda a manter a paciência sem guardar rancor.</div>
+      </div>
+
+      <div class="part">
+        <h3>§12 &middot; Como podemos lidar com injustiças assim como os gibeonitas fizeram?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Esperando com paciência que Jeová resolva o problema no tempo dele, confiando que ele agirá, em vez de tentar fazer justiça com as próprias mãos ou guardar amargura.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 26:3-4 promete "contínua paz" a quem confia plenamente em Jeová, "porque Jah Jeová é a Rocha eterna" — uma paz que não depende de a injustiça já ter sido corrigida, depende de confiar em quem vai corrigi-la. O exemplo de Laura French, citado no artigo, ilustra isso de forma concreta: acusada falsamente e dispensada de Betel, ela continuou servindo como pioneira e só foi restaurada quatro anos depois, servindo ainda por mais 50 anos. Ela não abandonou o serviço a Jeová esperando a "correção" — continuou servindo enquanto esperava. <br><br><b>Aplicação prática:</b> diante de uma injustiça pessoal, a pergunta útil não é "quando isso vai ser resolvido", é "o que eu continuo fazendo fielmente enquanto espero".</div>
+      </div>
+
+      <div class="part">
+        <h3>§13 &middot; (a) Quem eram os "netineus"? (b) O que eles fizeram depois que foram libertados de Babilônia?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Os netineus eram homens não israelitas que serviam no templo, muitos provavelmente descendentes dos gibeonitas; depois do exílio em Babilônia, eles voltaram com Zorobabel e depois com Esdras para ajudar a reconstruir o templo, mesmo sem ter herança de terra própria.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Esdras 2:1-2 e 2:58 listam os netineus entre os que retornaram do exílio (que terminou em 537 a.C.) com Zorobabel; Esdras 7:1-7 e 7:7 mostram um segundo grupo retornando anos depois com Esdras, incluindo novamente netineus. O detalhe marcante é que muitos judeus preferiram ficar confortavelmente estabelecidos em Babilônia — mas os netineus, sem propriedade nem status para reivindicar em Jerusalém, ainda assim voltaram para trabalhar na reconstrução. <br><br><b>Aplicação prática:</b> o exemplo dos netineus desafia a pensar: será que eu me disponho a servir mesmo quando não há vantagem pessoal óbvia nisso?</div>
+      </div>
+
+      <div class="part">
+        <h3>§14 &middot; Como os gibeonitas mostraram que eram leais a Jeová?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Voltando do exílio para cuidar das responsabilidades no templo e ajudando até na reconstrução das muralhas de Jerusalém, mesmo sem ter herança territorial própria na terra.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">1 Crônicas 9:2 lista, entre os primeiros a voltar e se reestabelecer, "alguns israelitas, os sacerdotes, os levitas e os servos do templo" — os descendentes dos gibeonitas estavam nesse grupo prioritário, apesar de sua origem não israelita. Neemias 3:26 vai além: mostra os netineus literalmente participando do trabalho físico de reparar as muralhas de Jerusalém, lado a lado com o resto do povo. A lealdade deles não era só de discurso, aparecia no trabalho braçal que assumiram. <br><br><b>Aplicação prática:</b> lealdade a Jeová se mostra em ações concretas de apoio à obra da congregação, não apenas em declarações de fé.</div>
+      </div>
+
+      <div class="part">
+        <h3>§15 &middot; O que aprendemos sobre Jeová nesse relato dos gibeonitas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Que Jeová dá muito valor aos seus servos leais e sempre cuida deles — ele salvou os gibeonitas na época de Josué, cuidou deles durante a destruição de Jerusalém em 607 a.C. e continuou os abençoando por quase mil anos, mesmo sendo um povo não israelita.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Esdras 2:70 e Neemias 11:21 mostram os netineus reassentados e organizados junto com o resto do povo depois do retorno; Esdras 7:24 registra algo notável — uma ordem oficial isentando os netineus (junto com sacerdotes e levitas) do pagamento de impostos, tributo e pedágio, um privilégio incomum para um grupo de origem estrangeira. Esse cuidado prolongado ao longo de gerações mostra que a fidelidade de Jeová a quem lhe é leal não é um gesto pontual, é constante ao longo do tempo. <br><br><b>Aplicação prática:</b> lembrar que Jeová "enxerga" e recompensa fidelidade de longo prazo ajuda a não desanimar quando o serviço a ele parece passar despercebido.</div>
+      </div>
+
+      <div class="part">
+        <h3>§16 &middot; Como podemos ser fiéis assim como os gibeonitas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Fazendo de tudo para apoiar a adoração verdadeira, inclusive fazendo sacrifícios pessoais motivados pelo amor a Jeová, confiando que ele vai cuidar do que precisamos.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Mateus 6:33 resume o princípio: "Persistam, então, em buscar primeiro o Reino e a justiça de Deus, e todas essas outras coisas lhes serão acrescentadas" — colocar o serviço a Jeová em primeiro lugar não é imprudência, é confiança na promessa dele. O exemplo de Alwin, nas Filipinas, mostra isso na prática: ele largou um emprego bem remunerado para ser pioneiro e, como resultado, ajudou 21 pessoas a se batizarem — um fruto que provavelmente não teria acontecido se ele tivesse priorizado a segurança financeira. <br><br><b>Aplicação prática:</b> avaliar, de tempos em tempos, se as prioridades do dia a dia realmente colocam o Reino "primeiro" ou só depois que sobra tempo e dinheiro.</div>
+      </div>
+
+      <div class="part">
+        <h3>§17 &middot; O que aprendemos ao relembrar relatos da Bíblia sobre os gibeonitas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Que esses relatos revelam a personalidade de Jeová — ele é humilde, misericordioso, justo e leal, e sempre recompensa quem o adora fielmente — e nos ensinam a ter fé, ser humildes, aceitar qualquer tarefa, ter paciência diante de injustiças e apoiar lealmente a adoração verdadeira.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Este parágrafo de fechamento não cita um texto bíblico novo — ele reúne as lições já vistas ao longo do artigo, cada uma ancorada num relato específico dos gibeonitas: fé e humildade (Josué 9 e 10), paciência diante de injustiça (2 Samuel 21) e lealdade continuada à adoração verdadeira (Esdras e Neemias). O fio condutor é que, em cada época diferente, o comportamento de Jeová com esse mesmo povo foi consistente. <br><br><b>Aplicação prática:</b> ao revisar o próprio ano de serviço, perguntar em qual dessas três áreas — fé/humildade, paciência diante de injustiça, ou lealdade na adoração — você mais precisa crescer agora.</div>
+      </div>
+
+    </section>
+
+    <div class="destaque">
+      <h3>Resumo geral</h3>
+      <p>O relato dos gibeonitas atravessa séculos da história bíblica e, em cada fase, revela um traço da personalidade de Jeová. Na conquista de Canaã (Josué 9-11), os gibeonitas mostraram fé ao buscar refúgio junto ao povo de Jeová e humildade ao aceitar tarefas simples como cortar lenha e tirar água; Jeová, por sua vez, mostrou humildade e misericórdia ao honrar um juramento feito sem consultá-lo. Nos dias de Davi (2 Samuel 21), depois que Saul quebrou esse acordo à custa de vidas, Jeová trouxe a injustiça à tona no tempo certo e mostrou-se um Deus justo mesmo com um povo estrangeiro — e os gibeonitas, por sua vez, respeitaram a Lei de Deus em vez de exigir vingança pessoal. Séculos depois, já como netineus (Esdras e Neemias), os descendentes dos gibeonitas voltaram do exílio para servir lealmente no templo, sem herança própria, e Jeová continuou os abençoando por quase mil anos. O convite do estudo é aplicar essas mesmas qualidades hoje: fé, humildade, paciência diante de injustiças e lealdade constante à adoração verdadeira.</p>
+      <h3>Ponto de destaque</h3>
+      <p>Eu queria destacar o que Jeová fez depois de descoberto o engano dos gibeonitas (Josué 9:14-19). Israel tinha jurado paz sem consultar Jeová — um erro claro — mas, em vez de anular tudo, Jeová permitiu que o juramento fosse honrado, mesmo custando abrir uma exceção ao que tinha ordenado sobre os cananeus. Isso me mostrou uma faceta de Jeová que às vezes esquecemos: ele valoriza tanto um compromisso feito em seu nome que prefere trabalhar dentro dele a simplesmente descartá-lo por causa do erro humano que o originou. Séculos depois, o mesmo padrão se repete quando ele cobra de Saul o rompimento desse acordo (2 Samuel 21) e quando continua abençoando os descendentes dos gibeonitas mesmo depois do exílio (Esdras 7:24). A reunião reforçou que Jeová é consistente ao longo de gerações — e que juramentos e compromissos assumidos em seu nome, mesmo os pequenos, têm peso duradouro para ele.</p>
+    </div>
+
+  </main>
+
+  <footer class="doc">
+    Fonte: wol.jw.org — uso pessoal de estudo. Gerado em 8 de setembro de 2026.
+  </footer>
+
+</div>
+</body>
+</html>
