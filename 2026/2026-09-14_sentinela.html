@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preparação da Reunião</title>
+<style>
+  :root{
+    --bg:#f4f6f8; --card:#ffffff; --ink:#1a2733; --muted:#5c6b7a;
+    --line:#e2e8ee; --accent:#2c5f8a; --accent-soft:#eaf1f8;
+    --gold:#9a7b26; --gold-soft:#f7f1e0; --green:#2f6b4f; --green-soft:#e8f3ed;
+    --shadow:0 1px 3px rgba(20,40,60,.08),0 6px 20px rgba(20,40,60,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f1620; --card:#161f2b; --ink:#e6edf3; --muted:#9fb0c0;
+      --line:#26313f; --accent:#6fa8d6; --accent-soft:#182634;
+      --gold:#d8b552; --gold-soft:#2a2415; --green:#77c79c; --green-soft:#14251d;
+      --shadow:0 1px 3px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1620; --card:#161f2b; --ink:#e6edf3; --muted:#9fb0c0;
+    --line:#26313f; --accent:#6fa8d6; --accent-soft:#182634;
+    --gold:#d8b552; --gold-soft:#2a2415; --green:#77c79c; --green-soft:#14251d;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif;padding:2rem 1rem}
+  .wrap{max-width:820px;margin:0 auto}
+  header.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:1.4rem 1.6rem;box-shadow:var(--shadow);margin-bottom:1.6rem}
+  .kind{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);background:var(--accent-soft);
+    padding:.28rem .7rem;border-radius:999px;margin-bottom:.7rem}
+  header.doc h1{margin:.1rem 0 .3rem;font-size:1.5rem;line-height:1.25}
+  header.doc .meta{color:var(--muted);font-size:.95rem}
+  header.doc .base{margin-top:.7rem;padding-top:.7rem;border-top:1px dashed var(--line);
+    font-size:.95rem}
+  section.block{margin:1.8rem 0}
+  .block > h2{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold);border-bottom:2px solid var(--gold-soft);padding-bottom:.4rem;margin:0 0 1rem}
+  .part{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:1.1rem 1.2rem;margin-bottom:1rem;box-shadow:var(--shadow)}
+  .part h3{margin:.1rem 0 .5rem;font-size:1.08rem;display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+  .time{font-size:.72rem;font-weight:700;color:var(--muted);background:var(--bg);
+    border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem;white-space:nowrap}
+  .refs{font-size:.9rem;color:var(--accent);font-weight:600;margin:.2rem 0 .5rem}
+  .lead{color:var(--muted);font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;
+    font-weight:700;margin:.9rem 0 .3rem}
+  .central{background:var(--accent-soft);border-left:3px solid var(--accent);
+    padding:.6rem .8rem;border-radius:0 8px 8px 0;margin:.3rem 0}
+  .elaborada{padding:.2rem 0 .2rem .2rem}
+  .joia{border:1px dashed var(--line);border-radius:8px;padding:.6rem .8rem;margin:.5rem 0}
+  .joia .cv{font-weight:700;color:var(--gold)}
+  .destaque{background:var(--green-soft);border:1px solid var(--green);border-radius:12px;
+    padding:1.1rem 1.2rem;margin-top:1rem}
+  .destaque h3{margin:.1rem 0 .5rem;color:var(--green)}
+  .q{font-weight:600}
+  .note{font-size:.85rem;color:var(--muted);font-style:italic}
+  .img-desc{background:var(--gold-soft);border-radius:8px;padding:.6rem .8rem;margin-top:.6rem;font-size:.92rem}
+  .img-desc b{color:var(--gold)}
+  .quadro{background:var(--accent-soft);border-radius:10px;padding:.9rem 1rem;margin-top:.7rem}
+  .quadro h4{margin:0 0 .5rem;font-size:.95rem;color:var(--accent)}
+  .quadro ul{margin:.3rem 0;padding-left:1.2rem}
+  footer.doc{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.82rem;text-align:center}
+  a{color:var(--accent)}
+  @media print{
+    body{background:#fff;color:#000;padding:0;font-size:12pt}
+    .part,header.doc,.destaque{box-shadow:none;border-color:#ccc}
+    .kind{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc">
+    <span class="kind">ESTUDO DE A SENTINELA</span>
+    <h1>Encontre consolo no livro de Isaías</h1>
+    <div class="meta">Semana de 14 a 20 de setembro de 2026 &middot; Cântico inicial 41 (Escuta minha oração) &middot; Cântico final 3 (Jeová, minha força e esperança)</div>
+    <div class="base">Texto base: "Assim diz Jeová: ... 'Assim como a mãe consola o seu filho, assim continuarei a consolar vocês.'" — Isaías 66:12, 13</div>
+  </header>
+
+  <main>
+
+    <section class="block">
+      <h2>Parágrafo por parágrafo</h2>
+
+      <div class="part">
+        <h3>§1-2 &middot; Como Jeová nos ajuda quando estamos tristes?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová se compara a uma mãe amorosa que consola o próprio filho; por meio da Bíblia — inclusive do livro de Isaías — ele nos consola e nos dá forças quando estamos tristes ou desanimados.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 66:13 diz: "Assim como a mãe consola o seu filho, assim continuarei a consolar vocês." A comparação é forte de propósito: não é um consolo genérico, é o tipo de consolo atencioso e carinhoso que uma mãe dá a um filho que chora. O parágrafo 2 acrescenta que esse amor de Jeová é ainda maior do que o de qualquer pai ou mãe humana (Isa. 49:15: "Será que uma mulher pode se esquecer do seu bebê... Mesmo que essas mulheres se esquecessem, eu nunca me esqueceria de você"). E Romanos 15:4 explica por que a Bíblia consegue nos consolar: "todas as coisas escritas anteriormente foram escritas para a nossa instrução... a fim de que, por meio da nossa perseverança e por meio do consolo das Escrituras, tivéssemos esperança." <br><br><b>Aplicação prática:</b> quando eu estiver triste, em vez de só desabafar, vale reservar um tempo para ler a Bíblia com calma e buscar ali o tipo de conforto atencioso que uma mãe amorosa dá — sem pressa, prestando atenção ao que estou sentindo.</div>
+      </div>
+
+      <div class="part">
+        <h3>§3 &middot; O que vamos ver neste estudo?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">O estudo vai analisar textos do livro de Isaías que podem nos consolar em três situações: quando enfrentamos mudanças inesperadas, quando somos esmagados pela culpa e quando sofremos a perda de alguém que amamos.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 40:1 mostra o tom do livro inteiro: "'Consolem, consolem o meu povo', diz o seu Deus." O parágrafo explica que Jeová fez esse livro ser escrito para consolar seu povo em Judá num período difícil, e que hoje também vivemos "tempos críticos, difíceis de suportar" (2 Tim. 3:1), por isso precisamos do mesmo tipo de consolo. <br><br><b>Aplicação prática:</b> antes de continuar a leitura, vale parar e pensar: qual das três situações — mudança inesperada, culpa ou perda de alguém — é a que mais pesa em mim agora? Isso ajuda a prestar atenção especial naquele trecho do estudo.</div>
+      </div>
+
+      <div class="part">
+        <h3>§4 &middot; Como podemos nos sentir quando passamos por mudanças inesperadas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Podemos ficar ansiosos e confusos, sem saber o que fazer, diante de mudanças repentinas como um problema de saúde, uma dificuldade financeira, um conflito no país ou uma mudança de designação.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Eclesiastes 9:11 descreve bem essa imprevisibilidade da vida: "os velozes nem sempre vencem a corrida, e nem sempre os fortes vencem a batalha... porque o tempo e o imprevisto sobrevêm a todos eles." Ninguém está imune a mudanças repentinas, por mais preparado que pareça estar. O relato de Joseph, que se sentiu "perdido" ao deixar Betel depois de 17 anos, mostra como esse sentimento é real e comum mesmo entre quem serve a Jeová havia muito tempo. <br><br><b>Aplicação prática:</b> reconhecer que a ansiedade diante de uma mudança inesperada é uma reação humana normal — prevista até em Eclesiastes — ajuda a não se sentir culpado por estar ansioso, e sim buscar a ajuda de Jeová para lidar com isso.</div>
+      </div>
+
+      <div class="part">
+        <h3>§5 &middot; Que garantia Jeová nos dá em Isaías 42:16? <span class="note">(Veja também a imagem.)</span></h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová promete guiar quem está andando "como cego" num caminho desconhecido, transformar a escuridão em luz diante da pessoa e nunca a abandonar.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 42:16 diz: "Conduzirei os cegos num caminho que não conhecem, e farei com que pisem em veredas desconhecidas. Transformarei a escuridão diante deles em luz, e o terreno acidentado em terra plana. Isso é o que vou fazer para eles e não vou abandoná-los." As palavras "cegos", "caminho que não conhecem" e "escuridão" descrevem exatamente a sensação de não saber o que vem pela frente numa mudança inesperada. O parágrafo explica que Jeová cumpre essa promessa por meio de conselhos sábios na sua Palavra e na organização, e por meio de irmãos que nos dão ajuda prática. <br><br><b>Aplicação prática:</b> diante de uma mudança que dá medo, procurar ativamente a orientação de Jeová na Bíblia e pedir ajuda prática aos irmãos é a forma de "deixar" ele pegar na nossa mão, como o texto descreve.</div>
+        <div class="img-desc"><b>Imagem do parágrafo:</b> um casal que saiu de Betel é bem recebido em sua nova congregação — ilustra concretamente a promessa de Isaías 42:16: mesmo numa mudança grande e incerta, Jeová guia e nunca abandona, muitas vezes por meio do acolhimento de irmãos na nova situação.</div>
+      </div>
+
+      <div class="part">
+        <h3>§6 &middot; Do que podemos ter certeza quando passamos por mudanças inesperadas?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Podemos ter certeza de que Jeová vai nos dar a força e a orientação necessárias, mesmo que a mudança pareça muito assustadora, porque seu amor leal e seu pacto de paz não serão abalados.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 54:10 garante: "os montes podem ser removidos, e as colinas podem ser abaladas, mas o meu amor leal não será removido de você, nem o meu pacto de paz será abalado." E Isaías 58:11 promete: "Jeová sempre o guiará e lhe dará fartura até mesmo numa terra árida... você se tornará como um jardim bem regado, como uma nascente cujas águas nunca secam." Joseph, citado no artigo, testemunhou isso na prática: disse que viu de perto "a ajuda e o amor de Jeová" durante o período de mudança, recebendo exatamente o que precisava em sentido material e emocional por meio de irmãos e irmãs. <br><br><b>Aplicação prática:</b> ao passar por uma mudança grande, vale anotar (mentalmente ou por escrito) os momentos concretos em que Jeová proveu ajuda — isso fortalece a confiança de que ele continuará agindo assim no futuro.</div>
+      </div>
+
+      <div class="part">
+        <h3>§7 &middot; Que luta alguns talvez enfrentem por causa de pecados que cometeram no passado?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Mesmo depois de confessar um pecado sério e receber ajuda dos anciãos, alguns continuam lutando contra sentimentos de culpa, achando que é "impossível" que Jeová realmente os tenha perdoado.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O rei Davi descreveu esse peso em Salmo 38:3, 8: "Não há paz nos meus ossos por causa do meu pecado... Fiquei entorpecido e me sinto completamente esmagado." É a descrição de alguém que já reconheceu o erro, mas ainda carrega o peso emocional dele. O parágrafo lembra que o processo bíblico é confessar o pecado, receber a ajuda amorosa dos anciãos (Tia. 5:14-16), continuar se esforçando para não repetir o erro (Pro. 28:13; 1 João 1:9) — e que, mesmo depois de perdoados por Jeová, é compreensível continuar lutando contra a culpa por um tempo (2 Cor. 2:7). <br><br><b>Aplicação prática:</b> se um sentimento de culpa antigo continuar voltando mesmo depois de já ter sido tratado com os anciãos, isso não significa que Jeová não perdoou — significa que vale a pena revisitar as garantias da Palavra dele, como as dos parágrafos seguintes.</div>
+      </div>
+
+      <div class="part">
+        <h3>§8-9 &middot; Como Isaías 1:18 descreve o perdão de Jeová?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová descreve seu perdão como completo e definitivo: mesmo pecados "como escarlate" — uma mancha bem difícil de remover — se tornam "brancos como a neve".</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 1:18 diz: "'Venham, pois, e resolvamos as questões entre nós', diz Jeová. 'Embora os seus pecados sejam como escarlate, serão tornados brancos como a neve; embora sejam vermelhos como pano carmesim, se tornarão como a lã.'" O parágrafo 9 usa o exemplo do rei Davi: mesmo tendo cometido adultério e assassinato (2 Sam. 11:3, 4, 14, 15; 12:13), depois de arrependido Jeová voltou a chamá-lo de "homem íntegro" (1 Reis 9:4, 5) — não porque ignorou o pecado, mas porque, ao perdoar, Jeová se lembra da fidelidade da pessoa, não do erro cometido. <br><br><b>Aplicação prática:</b> ao pensar num erro sério já confessado e tratado, vale conscientemente trocar o foco: em vez de reviver o pecado, lembrar de como você tem se esforçado desde então para servir a Jeová fielmente — é assim que ele mesmo vê a situação.</div>
+      </div>
+
+      <div class="part">
+        <h3>§10 &middot; Que garantia consoladora encontramos em Isaías 38:17?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová lança os pecados perdoados "atrás de si", ou seja, para onde ele não vê nem pensa mais neles — como se a pessoa nunca tivesse pecado.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 38:17 (do cântico do rei Ezequias) diz: "por causa do teu amor por mim tu me poupaste da cova da destruição. Lançaste todos os meus pecados atrás de ti." Uma obra de referência citada no artigo traduz essa frase como "fizeste como que se [meus pecados] não tivessem acontecido." Isaías 43:25 reforça a mesma ideia com as palavras do próprio Jeová: "Eu sou aquele que apaga as suas transgressões por minha própria causa, e não me lembrarei dos seus pecados." <br><br><b>Aplicação prática:</b> se o Supremo Juiz do universo decide não se lembrar mais de um pecado já perdoado, continuar se acusando por ele é impor a si mesmo um padrão mais rígido do que o do próprio Jeová — vale conscientemente "soltar" o que ele já soltou.</div>
+      </div>
+
+      <div class="part">
+        <h3>§11 &middot; No que Jeová se concentra quando olha para nós? <span class="note">(Veja também a imagem.)</span></h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová não se concentra em quem fomos no passado, mas em quem somos hoje e no tipo de pessoa que estamos nos esforçando para ser.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 57:16 explica o porquê: "não vou me opor a eles eternamente, nem ficarei sempre indignado; pois por minha causa o espírito do homem enfraqueceria." Jeová sabe que guardar rancor destruiria as próprias pessoas que ele quer salvar — por isso ele não age como pessoas imperfeitas, que às vezes ficam ressentidas por muito tempo. Isaías 55:7 completa: "que eles voltem a Jeová, que terá misericórdia deles, ao nosso Deus, porque perdoará amplamente." <br><br><b>Aplicação prática:</b> assim como Jeová escolhe não se concentrar nos nossos erros passados, também vale a pena, ao lidar com os próprios erros ou com os de outros na congregação, treinar o olhar para o esforço atual da pessoa, e não para o histórico dela.</div>
+        <div class="img-desc"><b>Imagem do parágrafo:</b> um irmão deixa o seu erro no passado e está feliz cursando a Escola do Serviço de Pioneiro — mostra visualmente o que o parágrafo ensina: Jeová não trava o futuro de alguém por causa de erros já perdoados, e a pessoa pode seguir servindo com alegria.</div>
+      </div>
+
+      <div class="part">
+        <h3>§12 &middot; Como podemos nos sentir quando perdemos alguém na morte?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">A dor pode ser insuportável e durar muito tempo, e é comum até questionar por que Jeová permitiu que aquilo acontecesse.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O artigo cita Michael, que perdeu os pais num incêndio e conta: "Eu fiquei arrasado e com raiva de Jeová por ele ter permitido que meus pais morressem. Eu sabia que Jeová não tinha causado a morte deles, mas ele também não tinha impedido." O relato mostra que sentir raiva, confusão ou até questionar Jeová num momento assim não é sinal de falta de fé — é uma reação humana diante de uma dor real, e o próprio livro de Isaías foi escrito justamente para consolar quem sente isso. <br><br><b>Aplicação prática:</b> se você (ou alguém próximo) sentir raiva ou confusão diante de uma perda, não é preciso reprimir esse sentimento nem se sentir culpado por tê-lo — é um bom momento para buscar, com calma, o consolo que Jeová oferece pela Bíblia, como visto nos parágrafos seguintes.</div>
+      </div>
+
+      <div class="part">
+        <h3>§13 &middot; O que Jeová nos promete em Isaías 25:8?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová promete acabar com a morte para sempre e enxugar as lágrimas de todo rosto.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 25:8 diz: "Ele acabará com a morte para sempre, e o Soberano Senhor Jeová enxugará as lágrimas de todo rosto. Ele tirará de toda a terra a humilhação de seu povo, pois o próprio Jeová falou isso." O artigo relaciona essa promessa com Apocalipse 21:4, 5, que confirma que essa não é apenas uma esperança vaga, mas uma promessa feita pelo próprio Jeová — o único que realmente pode cumpri-la. <br><br><b>Aplicação prática:</b> quando a saudade de alguém que morreu apertar, em vez de só lembrar da perda, vale conscientemente lembrar da promessa específica de Isaías 25:8 — que um dia não vai existir mais nenhuma lágrima por causa da morte.</div>
+      </div>
+
+      <div class="part">
+        <h3>§14 &middot; Como você se sente quando pensa na esperança da ressurreição? (Isaías 26:19) <span class="note">(Veja também a imagem.)</span></h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Jeová não só vai acabar com a morte, como também vai trazer de volta à vida as pessoas que perdemos — elas estão guardadas na memória dele até o tempo determinado.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Isaías 26:19 diz: "Os seus mortos viverão. Os cadáveres do meu povo se levantarão. Acordem e gritem de alegria, vocês que residem no pó! Pois o seu orvalho é como o orvalho da manhã, e a terra deixará que os impotentes na morte voltem a viver." O texto até se refere às pessoas ressuscitadas como "os meus cadáveres" — mostrando que Jeová se considera pessoalmente responsável por cada uma delas. Michael, mencionado antes, diz sobre esse versículo: "Isaías 26:19 me ajudou a entender que meus pais são preciosos para Jeová. Ele os mantém seguros em sua memória, e vai continuar a fazer isso até que chegue o tempo para trazê-los de volta à vida." <br><br><b>Aplicação prática:</b> ao pensar numa pessoa querida que morreu, trocar a pergunta "por que ela se foi?" pela pergunta "como vai ser revê-la?" ajuda a viver a esperança da ressurreição de forma mais concreta.</div>
+        <div class="img-desc"><b>Imagem do parágrafo:</b> a cena ilustra o reencontro de uma pessoa ressuscitada com quem a amava — traz para o concreto a promessa de Isaías 26:19 de que os "cadáveres" de Jeová "se levantarão", mostrando que a esperança de rever quem morreu é uma certeza, não apenas um desejo.</div>
+      </div>
+
+      <div class="part">
+        <h3>§15 &middot; Como a promessa da ressurreição pode nos ajudar a lidar com a dor de perder alguém que amamos?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Embora a promessa não elimine a dor da perda, saber que Jeová não esquece as pessoas que perdemos traz muito consolo e força para seguir em frente.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O artigo reconhece diretamente que "a promessa da ressurreição não acaba com a nossa dor" — não é uma solução mágica para a tristeza. Mas Michael descreve o efeito real dela: saber que Jeová "me dá forças e me consola" ao lembrar que seus pais continuam guardados na memória de Jeová. A recomendação do parágrafo 16 (a seguir) reforça isso: focar na promessa de estar junto de novo com quem se ama ajuda a lidar com a dor, em vez de tentar apagá-la ou ignorá-la. <br><br><b>Aplicação prática:</b> permitir-se sentir a dor da perda e, ao mesmo tempo, alimentar deliberadamente a esperança da ressurreição — lendo Isaías 26:19 ou conversando sobre ela — são coisas que podem andar juntas, uma não anula a outra.</div>
+      </div>
+
+      <div class="part">
+        <h3>§16 &middot; Que texto bíblico já consolou você quando enfrentou uma situação difícil?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">O estudo revisou textos de Isaías que consolam diante de mudanças inesperadas, do peso da culpa e da perda de entes queridos — e o convite final é identificar (e guardar) o texto que mais consola você pessoalmente.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O parágrafo de fechamento cita Salmo 94:19: "Quando as ansiedades me esmagaram, tu me consolaste e me acalmaste." É um resumo perfeito do fio condutor do estudo inteiro: seja qual for a fonte da angústia, Jeová tem um jeito de trazer alívio por meio da sua Palavra. O artigo sugere memorizar o texto mais marcante para você ou escrevê-lo num papel e colocá-lo em algum lugar visível. <br><br><b>Aplicação prática:</b> escolher, entre os textos vistos neste estudo (Isa. 42:16; 1:18; 38:17; 25:8; 26:19), aquele que mais tocou você agora, e guardá-lo de um jeito que você vá revisitar com frequência — no celular, num cartão, ou de memória.</div>
+      </div>
+
+    </section>
+
+    <div class="quadro">
+      <h4>Que consolo encontramos nos seguintes textos? (revisão da revista)</h4>
+      <ul>
+        <li><b>Isaías 42:16</b> — Jeová guia quem enfrenta mudanças inesperadas e nunca o abandona.</li>
+        <li><b>Isaías 1:18; 38:17</b> — o perdão de Jeová é completo; ele não se lembra mais do pecado perdoado.</li>
+        <li><b>Isaías 25:8; 26:19</b> — Jeová vai acabar com a morte para sempre e ressuscitar quem perdemos.</li>
+      </ul>
+    </div>
+
+    <div class="destaque">
+      <h3>Resumo geral</h3>
+      <p>O estudo "Encontre consolo no livro de Isaías" mostra que Jeová se compara a uma mãe amorosa que consola seu filho (Isa. 66:13) e que ele usa esse livro profético para nos fortalecer em três situações comuns. Diante de mudanças inesperadas, Isaías 42:16 garante que Jeová nos guia mesmo quando não sabemos o caminho, e Isaías 54:10 e 58:11 prometem que seu amor leal e sua provisão não vão faltar. Diante do peso da culpa por pecados do passado, Isaías 1:18, 38:17 e 43:25 garantem que o perdão de Jeová é completo — ele lança o pecado perdoado "atrás de si" e não se lembra mais dele — e Isaías 57:16 e 55:7 mostram que ele prefere ter misericórdia a guardar rancor. E diante da perda de alguém que amamos, Isaías 25:8 promete o fim definitivo da morte, e Isaías 26:19 garante a ressurreição de quem perdemos, que Jeová mantém guardado em sua memória. O convite final é escolher um desses textos e guardá-lo como fonte pessoal de consolo.</p>
+      <h3>Ponto de destaque</h3>
+      <p>Eu queria destacar a ligação entre Isaías 38:17 e 43:25 sobre o perdão de Jeová. Não é só que ele perdoa — é que ele "lança" o pecado perdoado "atrás de si", num lugar onde, segundo uma obra de referência citada no artigo, é "como se [o pecado] não tivesse acontecido". E Isaías 43:25 reforça isso com as palavras do próprio Jeová: "não me lembrarei dos seus pecados." Isso me mostrou que continuar se culpando por um erro já confessado e tratado é, na prática, aplicar a si mesmo um padrão mais duro do que o do próprio Juiz Supremo. A reunião reforçou que o consolo de Jeová não é superficial: ele reconstrói de verdade — seja o caminho de quem passa por uma mudança assustadora, seja a consciência de quem já foi perdoado, seja a esperança de quem perdeu alguém amado e confia na promessa da ressurreição.</p>
+    </div>
+
+  </main>
+
+  <footer class="doc">
+    Fonte: wol.jw.org — uso pessoal de estudo. Gerado em 18 de setembro de 2026.
+  </footer>
+
+</div>
+</body>
+</html>
