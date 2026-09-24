@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preparação da Reunião</title>
+<style>
+  :root{
+    --bg:#f4f6f8; --card:#ffffff; --ink:#1a2733; --muted:#5c6b7a;
+    --line:#e2e8ee; --accent:#2c5f8a; --accent-soft:#eaf1f8;
+    --gold:#9a7b26; --gold-soft:#f7f1e0; --green:#2f6b4f; --green-soft:#e8f3ed;
+    --shadow:0 1px 3px rgba(20,40,60,.08),0 6px 20px rgba(20,40,60,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f1620; --card:#161f2b; --ink:#e6edf3; --muted:#9fb0c0;
+      --line:#26313f; --accent:#6fa8d6; --accent-soft:#182634;
+      --gold:#d8b552; --gold-soft:#2a2415; --green:#77c79c; --green-soft:#14251d;
+      --shadow:0 1px 3px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1620; --card:#161f2b; --ink:#e6edf3; --muted:#9fb0c0;
+    --line:#26313f; --accent:#6fa8d6; --accent-soft:#182634;
+    --gold:#d8b552; --gold-soft:#2a2415; --green:#77c79c; --green-soft:#14251d;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif;padding:2rem 1rem}
+  .wrap{max-width:820px;margin:0 auto}
+  header.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:1.4rem 1.6rem;box-shadow:var(--shadow);margin-bottom:1.6rem}
+  .kind{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);background:var(--accent-soft);
+    padding:.28rem .7rem;border-radius:999px;margin-bottom:.7rem}
+  header.doc h1{margin:.1rem 0 .3rem;font-size:1.5rem;line-height:1.25}
+  header.doc .meta{color:var(--muted);font-size:.95rem}
+  header.doc .base{margin-top:.7rem;padding-top:.7rem;border-top:1px dashed var(--line);
+    font-size:.95rem}
+  section.block{margin:1.8rem 0}
+  .block > h2{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold);border-bottom:2px solid var(--gold-soft);padding-bottom:.4rem;margin:0 0 1rem}
+  .part{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:1.1rem 1.2rem;margin-bottom:1rem;box-shadow:var(--shadow)}
+  .part h3{margin:.1rem 0 .5rem;font-size:1.08rem;display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+  .time{font-size:.72rem;font-weight:700;color:var(--muted);background:var(--bg);
+    border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem;white-space:nowrap}
+  .refs{font-size:.9rem;color:var(--accent);font-weight:600;margin:.2rem 0 .5rem}
+  .lead{color:var(--muted);font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;
+    font-weight:700;margin:.9rem 0 .3rem}
+  .central{background:var(--accent-soft);border-left:3px solid var(--accent);
+    padding:.6rem .8rem;border-radius:0 8px 8px 0;margin:.3rem 0}
+  .elaborada{padding:.2rem 0 .2rem .2rem}
+  .joia{border:1px dashed var(--line);border-radius:8px;padding:.6rem .8rem;margin:.5rem 0}
+  .joia .cv{font-weight:700;color:var(--gold)}
+  .destaque{background:var(--green-soft);border:1px solid var(--green);border-radius:12px;
+    padding:1.1rem 1.2rem;margin-top:1rem}
+  .destaque h3{margin:.1rem 0 .5rem;color:var(--green)}
+  .q{font-weight:600}
+  .note{font-size:.85rem;color:var(--muted);font-style:italic}
+  .img-desc{background:var(--gold-soft);border-radius:8px;padding:.6rem .8rem;margin-top:.6rem;font-size:.92rem}
+  .img-desc b{color:var(--gold)}
+  .quadro{background:var(--accent-soft);border-radius:10px;padding:.9rem 1rem;margin-top:.7rem}
+  .quadro h4{margin:0 0 .5rem;font-size:.95rem;color:var(--accent)}
+  .quadro ul{margin:.3rem 0;padding-left:1.2rem}
+  footer.doc{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.82rem;text-align:center}
+  a{color:var(--accent)}
+  @media print{
+    body{background:#fff;color:#000;padding:0;font-size:12pt}
+    .part,header.doc,.destaque{box-shadow:none;border-color:#ccc}
+    .kind{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc">
+    <span class="kind">ESTUDO DE A SENTINELA</span>
+    <h1>Você está conhecendo a Jeová cada vez melhor?</h1>
+    <div class="meta">Semana de 21 a 27 de setembro de 2026 &middot; Cântico inicial 12 (Nosso grandioso Deus, Jeová) &middot; Cântico final 28 (Quem pode ser amigo de Jeová?)</div>
+    <div class="base">Texto base: "Conheça o Deus do seu pai e sirva-o de coração pleno." — 1 Crônicas 28:9<br>
+    <span class="note">Objetivo do artigo: aprender o que significa conhecer a Jeová, por que devemos conhecê-lo cada vez melhor e como podemos fazer isso.</span></div>
+  </header>
+
+  <main>
+
+    <section class="block">
+      <h2>Introdução</h2>
+
+      <div class="part">
+        <h3>§1 &middot; Como nos sentimos quando pensamos no conhecimento e sabedoria de Jeová e nas coisas que ele fez?</h3>
+        <div class="refs">Romanos 11:33, 34</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Ficamos impressionados e percebemos o quanto somos pequenos diante do nosso Criador — assim como Paulo, que ficou maravilhado com a profundidade da sabedoria e do conhecimento de Deus.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Paulo praticamente "perde o fôlego" em Romanos 11:33: "Como são profundas as riquezas, a sabedoria e o conhecimento de Deus! Como são insondáveis os seus julgamentos, e impenetráveis os seus caminhos!" E no versículo 34 ele pergunta: "quem chegou a conhecer a mente de Jeová?" O interessante é que quem escreveu isso foi um homem que conhecia muito bem as Escrituras — ou seja, quanto mais ele sabia sobre Jeová, mais admirado ficava, e não menos. <br><br><b>Aplicação prática:</b> não deixar que a familiaridade com a verdade tire o meu senso de admiração. Parar de vez em quando e pensar: "o Deus que eu sirvo é grande demais para eu entender tudo — e mesmo assim quer que eu o conheça".</div>
+      </div>
+
+      <div class="part">
+        <h3>§2 &middot; Como sabemos que é possível conhecer a Jeová?</h3>
+        <div class="refs">1 Crônicas 28:9; 1 João 5:20; Mateus 11:27</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Nunca vamos saber tudo sobre Jeová, mas a Bíblia garante que é possível conhecê-lo: Davi disse que, se o buscarmos, Jeová "deixará que você o encontre"; João disse que podemos "obter conhecimento daquele que é verdadeiro"; e Jesus disse que revela o Pai a quem ele quiser.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">São três testemunhas em épocas diferentes dizendo a mesma coisa. Davi, em 1 Crônicas 28:9, dá a condição: "Se você o buscar, ele deixará que você o encontre" — ou seja, conhecer a Jeová depende de a gente buscar. João (1 João 5:20) mostra que o próprio Filho de Deus "nos deu entendimento para podermos obter conhecimento daquele que é verdadeiro". E Jesus (Mat. 11:27) explica que ninguém conhece plenamente o Pai "exceto o Filho e aquele a quem o Filho quiser revelá-lo". Juntando: Jeová não é um Deus distante e inacessível — ele quer ser encontrado, e usou o Filho para abrir esse caminho. <br><br><b>Aplicação prática:</b> a iniciativa de "buscar" é minha. Se eu sinto Jeová distante, a pergunta honesta é: "eu estou buscando de verdade?"</div>
+      </div>
+
+      <div class="part">
+        <h3>§3 &middot; O que vamos aprender neste estudo?</h3>
+        <div class="refs">João 17:3</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Como conhecer a Deus é um processo contínuo, vamos ver três perguntas: o que significa conhecer a Jeová, por que devemos conhecê-lo cada vez melhor e como podemos fazer isso.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">João 17:3 liga a vida eterna a "que conheçam a ti, o único Deus verdadeiro". O parágrafo chama atenção para a nota de estudo desse versículo, que mostra que conhecer a Deus é um processo contínuo — não algo que a gente "conclui" no batismo. Por isso o estudo vale tanto para quem começou ontem quanto para quem serve há décadas: sempre dá para aprender mais sobre como alegrar o coração de Jeová e confiar mais nele. <br><br><b>Aplicação prática:</b> entrar neste estudo com a pergunta "o que eu ainda não percebi sobre Jeová?", em vez de achar que é um assunto "básico".</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>O que significa conhecer a Jeová?</h2>
+
+      <div class="part">
+        <h3>§4 &middot; O que está envolvido em conhecer a Jeová?</h3>
+        <div class="refs">Jeremias 24:7</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Conhecer a Jeová envolve o coração — sentimentos e motivações — e não só informação. Não basta saber que ele tem um nome e que é Deus; precisamos conhecer a pessoa por trás do nome, suas belas qualidades.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Em Jeremias 24:7, Jeová promete aos judeus que voltariam do exílio: "Vou dar-lhes um coração capaz de me conhecer". Repare: ele não diz "uma cabeça capaz de me conhecer", e sim um <i>coração</i>. Aqueles judeus já sabiam coisas sobre Deus, mas precisavam de algo mais profundo. A obra de referência citada no artigo resume bem: há uma grande diferença entre saber sobre Deus e conhecer a Deus — "similar à diferença entre ler sobre o amor e se apaixonar por alguém." <br><br><b>Aplicação prática:</b> quando eu estudar, não parar no "o quê" (fatos), mas perguntar "como Jeová é?" e "como eu me sinto sobre isso?". É o coração que transforma informação em amizade.</div>
+      </div>
+
+      <div class="part">
+        <h3>§5 &middot; O que o exemplo do rei Josias nos ensina sobre conhecer a Jeová?</h3>
+        <div class="refs">2 Crônicas 34:3; Jeremias 22:15, 16</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Que conhecer a Jeová inclui aprender o que ele gosta e o que não gosta — e agir de acordo. Josias buscou a Jeová desde jovem e colocou em prática o que aprendeu, defendendo a justiça e os pobres; Jeová disse: "Não é isso que significa conhecer-me?"</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">2 Crônicas 34:3 conta que Josias, "quando ainda era jovem, começou a buscar o Deus de Davi". Mas o que chama atenção é o comentário do próprio Jeová em Jeremias 22:15, 16: Josias "defendia a justiça e a retidão" e "a causa do necessitado e do pobre". E aí vem a pergunta: "Não é isso que significa conhecer-me?" Para Jeová, conhecer não é só estudar — é agir como ele age. Conhecimento que não muda o comportamento não é o conhecimento que Jeová reconhece. <br><br><b>Aplicação prática:</b> depois de aprender algo sobre Jeová (por exemplo, que ele se importa com os mais fracos), perguntar: "o que eu vou fazer diferente essa semana por causa disso?" — com alguém idoso, doente ou necessitado da congregação.</div>
+      </div>
+
+      <div class="part">
+        <h3>§6 &middot; De acordo com Salmo 9:10, o que acontece quando conhecemos bem a Jeová?</h3>
+        <div class="refs">Salmo 9:10 (leia); 2 Timóteo 1:12</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Quanto mais conhecemos a Jeová, mais confiamos nele. "Os que conhecem o teu nome confiarão em ti." Paulo, pouco antes de morrer, disse: "Conheço Aquele em quem creio."</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Salmo 9:10 faz uma ligação direta: "Os que conhecem o teu nome confiarão em ti; nunca abandonarás os que te buscam, ó Jeová." Conhecer leva a confiar. E Paulo é a prova disso: preso pela última vez, perto da morte, ele escreve em 2 Timóteo 1:12: "não me envergonho. Pois conheço Aquele em quem creio e estou confiante em que ele é capaz de guardar o que entreguei aos cuidados dele, até aquele dia." A nota de estudo citada no parágrafo explica que Paulo tinha certeza de que Jeová se lembraria da sua vida fiel até o dia da ressurreição. Uma vida inteira de experiências com Jeová deu a Paulo uma confiança que nem a morte abalou. <br><br><b>Aplicação prática:</b> se a minha confiança em Jeová anda fraca, o remédio não é "tentar confiar mais" no vazio — é conhecê-lo melhor. Confiança cresce junto com conhecimento.</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Por que devemos conhecer a Jeová cada vez melhor?</h2>
+
+      <div class="part">
+        <h3>§7 &middot; O que pode acontecer com quem já serve a Jeová há muitos anos?</h3>
+        <div class="refs">2 Timóteo 3:16, 17; Salmo 25:8-10</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Podemos acabar deixando de nos esforçar tanto para aprender sobre Jeová — lendo a Bíblia só em busca de pontos práticos para nós ou para ajudar outros, e esquecendo de perguntar: "O que isso me ensina sobre Jeová?"</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O parágrafo é equilibrado: buscar aplicação prática é bom — 2 Timóteo 3:16, 17 diz que a Escritura é útil para ensinar, corrigir e deixar o servo de Deus "plenamente equipado". Mas a Bíblia também revela muito sobre o seu Autor. Salmo 25:8-10 é um exemplo: "Bom e reto é Jeová. Por isso ele instrui os pecadores no caminho a seguir... Todas as veredas de Jeová são amor leal e fidelidade." Aqui, a instrução vem junto com um retrato de quem Jeová é. O risco de quem já tem anos na verdade é ler a Bíblia como um "manual" e esquecer que é também uma "biografia" de Deus. <br><br><b>Aplicação prática:</b> acrescentar uma pergunta fixa à minha leitura: "O que isso me ensina sobre Jeová Deus?" — antes de "como eu aplico isso?".</div>
+      </div>
+
+      <div class="part">
+        <h3>§8 &middot; Conhecer melhor a Jeová pode ter que impacto na nossa amizade com ele?</h3>
+        <div class="refs">Salmo 73:24-28 (leia)</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">A amizade fica mais forte. Quando aprendemos mais sobre Jeová — lendo a Bíblia, assistindo ao broadcasting, a assembleias e congressos — nos sentimos mais achegados a ele e motivados a louvá-lo e agradecer, como Asafe.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Salmo 73 tem um detalhe bonito: Asafe começou o salmo quase desanimado, com inveja dos maus que prosperavam. Mas depois de refletir sobre Jeová, ele conclui nos versículos 24-28: "Tu me guias com os teus conselhos... A quem mais tenho nos céus? Além de ti, não desejo nada na terra... Deus é a rocha do meu coração e a minha porção, para sempre... para mim, é bom me achegar a Deus." Conhecer melhor a Jeová mudou a perspectiva dele e aprofundou o apego. O artigo resume: cada esforço para conhecer melhor a Jeová aumenta a nossa gratidão pelo privilégio de ser amigos dele. <br><br><b>Aplicação prática:</b> depois de uma reunião ou congresso, anotar uma coisa que aprendi sobre Jeová (não só sobre o que eu tenho que fazer) e agradecer a ele por isso na oração daquela noite.</div>
+      </div>
+
+      <div class="part">
+        <h3>§9 &middot; Como lembrar de Jeová influencia nossas decisões? Dê um exemplo.</h3>
+        <div class="refs">Provérbios 3:5, 6; Salmo 19:13, 14</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Quando pensamos no que aprendemos sobre Jeová e em como ele se sente com nossas ações, tomamos decisões melhores. Assim como o marido que deixa uma foto da esposa por perto pensa nela e evita magoá-la, quanto mais pensamos em Jeová, mais nossas decisões agradam a ele.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Provérbios 3:6 diz: "Lembre-se dele em todos os seus caminhos, e ele endireitará as suas veredas." O exemplo da foto da esposa é bem prático: a foto não obriga ninguém a nada, mas mantém a pessoa amada na mente — e isso muda as escolhas. E Salmo 19:13, 14 mostra o resultado: Davi pede para ser guardado de "atos presunçosos" e deseja que "as palavras da minha boca e as reflexões do meu coração" sejam agradáveis a Jeová. Quem tem Jeová presente na mente pensa antes de agir. <br><br><b>Aplicação prática:</b> criar meus próprios "lembretes" de Jeová ao longo do dia — um texto na tela do celular, uma oração curta antes de uma decisão — para que, na hora da escolha, eu já esteja pensando nele.</div>
+      </div>
+
+      <div class="part">
+        <h3>§10 &middot; Quando aprendemos sobre Jeová, o que conseguimos fazer?</h3>
+        <div class="refs">Gênesis 1:26; Mateus 23:23; 1 João 4:8, 11</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Conseguimos imitá-lo. Fomos criados à imagem de Jeová, então podemos refletir as qualidades dele — e quanto mais as conhecemos, mais entendemos como imitá-lo.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Gênesis 1:26 ("Façamos o homem à nossa imagem") é a base: temos capacidade de refletir Jeová. Mas Mateus 23:23 mostra o perigo de estudar as leis de Deus sem enxergar as qualidades por trás delas: os fariseus davam o dízimo "da hortelã, do endro e do cominho", mas desconsideravam "a justiça, a misericórdia e a fidelidade". Sabiam muito, mas não se pareciam com Deus. Já 1 João 4:8, 11 mostra o caminho certo: "Deus é amor" e, "se foi assim que Deus nos amou, então nós também temos a obrigação de amar uns aos outros." Conhecer a qualidade leva a imitá-la. <br><br><b>Aplicação prática:</b> ao estudar uma lei ou princípio bíblico, perguntar: "que qualidade de Jeová está por trás disso?" — e então procurar mostrar essa qualidade com alguém.</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Como podemos conhecer melhor a Jeová?</h2>
+
+      <div class="part">
+        <h3>§11 &middot; Como você aprendeu sobre Jeová?</h3>
+        <div class="refs">Neemias 8:8; Atos 14:17</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Talvez pelos pais, usando histórias da Bíblia e a criação, ou por meio de um estudo com uma Testemunha de Jeová, que usou uma publicação como o livro <i>Seja Feliz para Sempre!</i> para mostrar as qualidades de Deus nos relatos bíblicos e na criação. Mas precisamos continuar aprendendo.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Os dois textos mostram as duas "janelas" pelas quais muita gente conheceu a Jeová. Neemias 8:8: os levitas liam a Lei "explicando-a claramente e dando o sentido dela; assim ajudavam o povo a entender" — é exatamente o que um instrutor faz num estudo bíblico. E Atos 14:17: Jeová "não tenha deixado de dar testemunho de si mesmo", dando "chuvas do céu e épocas de colheita abundante" — a criação fala dele. <span class="note">(O artigo remete aos pontos 5-7 da lição 7 do livro <i>Seja Feliz para Sempre!</i>; referência não aberta neste preparo.)</span> <br><br><b>Aplicação prática (comentário pessoal):</b> essa é uma pergunta para responder com a própria experiência — lembrar quem me ensinou sobre Jeová e qual qualidade dele me marcou primeiro.</div>
+      </div>
+
+      <div class="part">
+        <h3>§12-13 &middot; O que podemos aprender na nossa leitura da Bíblia? Dê um exemplo.</h3>
+        <div class="refs">Êxodo 34:6, 7; Jeremias 38:6-13; Jeremias 39:15-18 (leia)</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Às vezes a Bíblia cita qualidades de Deus diretamente, mas na maioria das vezes traz relatos sobre pessoas e suas decisões — e podemos pensar no que eles ensinam sobre Jeová. No relato de Ebede-Meleque, além de imitar a coragem e o amor dele, vemos que Jeová dá valor ao que fazemos, é justo e imparcial.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Êxodo 34:6, 7 é o exemplo de "qualidade citada diretamente": "Jeová, Jeová, Deus misericordioso e compassivo, paciente e cheio de amor leal e de verdade". Mas o artigo nos convida a garimpar os relatos. Em Jeremias 38, o etíope Ebede-Meleque tira Jeremias da cisterna. Aí, em Jeremias 39:15-18, Jeová manda um recado pessoal para ele: "eu vou livrá-lo naquele dia... você não será entregue aos homens de quem tem medo... Você terá a sua vida como despojo porque confiou em mim." <br>O que isso mostra sobre Jeová? <b>Ele dá valor</b> ao que fazemos — não esqueceu o ato de coragem. <b>É justo</b> — recompensa quem confiou nele. <b>É imparcial</b> — Ebede-Meleque era estrangeiro, um etíope, e mesmo assim recebeu uma promessa pessoal. E ainda um detalhe tocante: Jeová sabia que Ebede-Meleque tinha medo ("os homens de quem tem medo") e respondeu exatamente a esse medo. <br><br><b>Aplicação prática:</b> em cada trecho da leitura semanal, procurar ao menos uma qualidade de Jeová e, depois, orar agradecendo e louvando a Jeová pelo tipo de Deus que ele é — como o próprio artigo sugere.</div>
+        <div class="img-desc"><b>Imagem:</b> Ebede-Meleque e outros homens usam uma corda para tirar Jeremias da cisterna, enquanto homens armados ficam de guarda. A cena ilustra o relato do §13: à primeira vista mostra a coragem de Ebede-Meleque (agir com guardas por perto!), mas o ponto do parágrafo é ir além e ver <i>Jeová</i> no relato — o Deus que viu esse ato, valorizou e protegeu um estrangeiro que teve medo, mas confiou nele.</div>
+      </div>
+
+      <div class="part">
+        <h3>§14 &middot; Por que precisamos meditar profundamente nas coisas que Jeová criou?</h3>
+        <div class="refs">Salmo 145:9, 10; Romanos 1:20</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Porque só observar a criação não basta — há quem estude a natureza a vida toda e não perceba as qualidades de Deus. As qualidades invisíveis de Deus "são percebidas por meio das coisas feitas", então precisamos usar a mente para identificá-las.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Romanos 1:20 diz que as qualidades invisíveis de Deus — "seu poder eterno e Divindade" — "são percebidas por meio das coisas feitas". O verbo "perceber" é a chave: a criação fala, mas é preciso prestar atenção. O artigo cita uma tradução que diz que essas qualidades são "reconhecíveis com a consideração da mente humana". E Salmo 145:9, 10 mostra o que se descobre quando se faz isso: "Jeová é bom para todos, e a sua misericórdia pode ser vista em todas as suas obras." <br><br><b>Aplicação prática:</b> ao ver algo bonito ou engenhoso na natureza, não parar no "que lindo" — dar um passo a mais e perguntar "que qualidade de Jeová isso mostra?".</div>
+      </div>
+
+      <div class="part">
+        <h3>§15 &middot; O que Patrick faz para conhecer melhor a Jeová, e o que você pode fazer?</h3>
+        <div class="lead">Resposta central</div>
+        <div class="central">Patrick, que mora em Brazzaville (República do Congo), observa da sacada do apartamento insetos e pássaros — como pássaros fazendo um ninho com materiais da vizinhança — e medita sobre o Criador. Ele concluiu que Jeová cuida até das criações que parecem insignificantes e, por isso, vai cuidar dele também. Mesmo morando numa cidade grande, podemos fazer o mesmo.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O parágrafo não cita versículo específico; o eixo é a experiência de Patrick, que aplica na prática o que o §14 ensinou com Romanos 1:20. O detalhe importante é que ele "não parou por aí": não só observou os pássaros, mas tirou uma lição sobre Jeová — "Jeová se preocupa com todas as suas criações, até com aquelas que parecem insignificantes. Isso me ajudou a ter certeza que Jeová sempre vai cuidar de mim." Ou seja, a meditação na criação virou confiança pessoal. <br><br><b>Aplicação prática:</b> morar em cidade não é desculpa. Uma planta na janela, um passarinho no fio, o céu no fim da tarde — dá para transformar esses minutos em momentos de conhecer melhor a Jeová.</div>
+        <div class="img-desc"><b>Imagem:</b> uma irmã na varanda de casa, numa cidade grande, regando as plantas e admirando um beija-flor que se alimenta. A imagem traduz o exemplo de Patrick para o nosso dia a dia: mesmo cercados de prédios, há "pedaços" da criação ao alcance, e o ponto não é só admirar o beija-flor, mas meditar no Criador que cuida até de um passarinho tão pequeno.</div>
+      </div>
+
+      <div class="part">
+        <h3>§16 &middot; O que ajudou Maria, mãe de Jesus, a conhecer melhor a Jeová, e como podemos imitar o exemplo dela?</h3>
+        <div class="refs">Lucas 1:30; Lucas 1:46-55; Hebreus 4:16</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Maria meditou no que Jeová fez por ela quando recebeu a designação difícil de ser mãe do Filho de Deus — e viu ainda mais claramente que ele é poderoso, misericordioso, imparcial e se interessa pelos humildes. Podemos imitá-la perguntando, quando percebemos o cuidado de Jeová: "O que isso me ensina sobre ele? Que qualidades ficaram mais claras?"</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">Maria já tinha "achado favor" diante de Deus (Luc. 1:30), ou seja, já o conhecia bem. Mesmo assim, a experiência de receber ajuda dele — por meio do anjo Gabriel e de Elisabete — aprofundou esse conhecimento. Em Lucas 1:46-55 dá para ver cada qualidade que ela percebeu: <b>poder</b> ("o Poderoso fez grandes ações por mim"), <b>misericórdia</b> ("de geração em geração sua misericórdia está sobre os que o temem"), <b>interesse pelos humildes</b> ("ele olhou para a condição humilde da sua escrava"; "enalteceu humildes"). Hebreus 4:16 nos lembra que também recebemos ajuda "no tempo certo". <br><br><b>Aplicação prática:</b> quando uma oração for respondida, não só dizer "obrigado" e seguir em frente — parar e fazer as duas perguntas do artigo, transformando a experiência em conhecimento sobre Jeová.</div>
+        <div class="img-desc"><b>Imagem:</b> um irmão que fica muito nervoso com discursos lembra de como Jeová o ajudou: (1) ansioso com uma parte na reunião do meio de semana, ele ora sobre isso; (2) ele consegue fazer bem a sua parte. A imagem mostra o "estilo Maria" no dia a dia: olhar para trás, reconhecer a ajuda de Jeová numa situação concreta e tirar dali uma lição sobre quem ele é — um Deus que ouve e ajuda "no tempo certo".</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Nunca vamos parar de aprender</h2>
+
+      <div class="part">
+        <h3>§17-18 &middot; Por que podemos dizer que nunca vamos parar de aprender sobre Jeová?</h3>
+        <div class="refs">Apocalipse 20:12; Isaías 11:6-9; Salmo 90:2; Salmo 147:5; Eclesiastes 3:11</div>
+        <div class="lead">Resposta central</div>
+        <div class="central">Porque no novo mundo aprenderemos muito mais — com novos rolos, mais contato com a natureza, a ressurreição e o caminho para a perfeição — e porque Jeová sempre existiu e seu entendimento é impossível de medir; nunca vamos compreender plenamente o trabalho dele.</div>
+        <div class="lead">Resposta elaborada</div>
+        <div class="elaborada">O §17 olha para o futuro: Apocalipse 20:12 fala de "rolos" que serão abertos, e o artigo os relaciona a orientações sobre como viver no Paraíso; Isaías 11:6-9 descreve animais em paz, e o versículo 9 completa: "a terra certamente ficará cheia do conhecimento de Jeová, assim como as águas cobrem o mar." O §18 dá o motivo mais profundo: Jeová é "de eternidade a eternidade" (Sal. 90:2), "é impossível medir o seu entendimento" (Sal. 147:5), e "a humanidade nunca compreenderá plenamente o trabalho do verdadeiro Deus" (Ecl. 3:11). Um Deus eterno e infinito nunca vai "acabar" de ser conhecido — e isso é uma boa notícia: a vida eterna nunca vai ficar monótona. <br><br><b>Aplicação prática:</b> não importa há quanto tempo sirvo a Jeová, tratar cada oportunidade (leitura, reunião, conversa) como uma chance de conhecer um pouco mais o nosso amoroso Pai.</div>
+      </div>
+    </section>
+
+    <div class="quadro">
+      <h4>Como responderia? (revisão da revista)</h4>
+      <ul>
+        <li><b>O que significa conhecer a Jeová?</b> — Conhecer a pessoa por trás do nome, com o coração (Jer. 24:7), e agir de acordo com o que ele gosta, como Josias (Jer. 22:15, 16).</li>
+        <li><b>Por que devemos conhecê-lo cada vez melhor?</b> — Aumenta a confiança (Sal. 9:10), fortalece a amizade (Sal. 73:28), ajuda a tomar boas decisões (Pro. 3:6) e a imitar suas qualidades (1 João 4:8, 11).</li>
+        <li><b>Como podemos conhecê-lo melhor?</b> — Lendo a Bíblia buscando as qualidades dele (Jer. 39:15-18), meditando na criação (Rom. 1:20) e refletindo no que ele já fez por nós, como Maria (Luc. 1:46-55).</li>
+      </ul>
+    </div>
+
+    <div class="destaque">
+      <h3>Resumo geral</h3>
+      <p>O estudo "Você está conhecendo a Jeová cada vez melhor?" parte de 1 Crônicas 28:9 para mostrar que é possível conhecer a Deus, mas que isso é um processo contínuo (João 17:3). Conhecer a Jeová vai além de ter informação: envolve o coração (Jer. 24:7) e agir de acordo com o que ele gosta, como fez Josias — "Não é isso que significa conhecer-me?" (Jer. 22:16). Esse conhecimento gera confiança (Sal. 9:10; 2 Tim. 1:12), fortalece a amizade (Sal. 73:24-28), nos ajuda a decidir bem por "lembrar dele" (Pro. 3:6) e a imitar suas qualidades (Gên. 1:26; 1 João 4:8, 11). O artigo alerta quem serve há anos a não ler a Bíblia só em busca de aplicações práticas, e sim perguntar "o que isso me ensina sobre Jeová?". Três caminhos são apresentados: ler os relatos bíblicos procurando as qualidades dele (o exemplo de Ebede-Meleque, Jer. 39:15-18), meditar profundamente na criação (Rom. 1:20; a experiência de Patrick) e refletir no que Jeová já fez por nós (Maria, Luc. 1:46-55). E como Jeová é eterno e seu entendimento é imensurável (Sal. 147:5; Ecl. 3:11), nunca vamos parar de aprender sobre ele.</p>
+      <h3>Ponto de destaque</h3>
+      <p>Eu queria destacar a pergunta que o próprio Jeová fez em Jeremias 22:16, falando do rei Josias: ele "defendia a causa do necessitado e do pobre... 'Não é isso que significa conhecer-me?'". Isso me fez pensar que, para Jeová, conhecê-lo não se mede por quanto eu sei, mas por quanto eu me pareço com ele. Os fariseus sabiam muita coisa e deixavam de lado "a justiça, a misericórdia e a fidelidade" (Mat. 23:23). Por isso gostei da sugestão do artigo de incluir na leitura uma pergunta simples: "O que isso me ensina sobre Jeová?" — como no caso de Ebede-Meleque, em que Jeová não só valorizou o ato de coragem dele, mas respondeu exatamente ao medo que ele sentia. Quanto mais eu enxergo como Jeová é, mais eu confio nele e mais consigo imitá-lo.</p>
+    </div>
+
+  </main>
+
+  <footer class="doc">
+    Fonte: wol.jw.org — uso pessoal de estudo. Gerado em 24 de setembro de 2026.
+  </footer>
+
+</div>
+</body>
+</html>
